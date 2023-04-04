@@ -1,0 +1,145 @@
+
+.pokemons{
+    display: grid;
+    grid-template-columns: 1fr;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pokemon{
+    margin: .5rem;
+    padding: 1rem 1rem;
+    /* background-color: #49d0b0; */
+    border-radius: .5rem;
+    /* height: 100px; */
+    display: flex;
+    flex-direction: column;
+}
+.pokemon .detail{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.pokemon .name {
+    color: #fff;
+    margin-bottom: 0;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.pokemons .detail img{
+    max-width: 100%;
+    height: 75px;
+    align-self: flex-end;
+}
+.pokemon .detail .types {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.pokemon .detail .types .type {
+    /* background-color: #62e0ca; */
+    color: #fff;
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    font-size: .625rem;
+    border-radius: 1rem;
+    filter: brightness(1.1);
+    text-align: center;
+}
+
+.pokemon .number {
+    color:#333;
+    text-align: right;
+    opacity: .3;
+    font-size: .625rem;
+    filter: brightness(1.1);
+}
+
+@media screen and (min-width: 380px) {
+    .pokemons {
+      grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (min-width: 576px) {
+    .pokemons {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media screen and (min-width: 992px) {
+    .pokemons {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+.grass{
+    background-color: #78c850;
+}
+.fire {
+    background-color: #f08030;
+}
+.water {
+    background-color: #6890f0;
+}
+.bug{
+    background-color: #a8b820;
+}
+.poison {
+    background-color: #a040a0;
+}
+.flying{
+    background-color: #a890f0;
+}
+.normal {
+    background-color: #a8a878;
+}
+.electric {
+    background-color: #f8d030;
+}
+.fighting{
+    background-color: #c03028;
+}
+.ground{
+    background-color: #e0c068;
+}
+.psychic{
+    background-color: #f85888;
+}
+.rock{
+    background-color: #b8a038;
+}
+.ice{
+    background-color: #98d8d8;
+}
+.dragon{
+    background-color: #7038f8;
+}
+.ghost{
+    background-color: #705898;
+}
+.dark{
+    background-color: #705848;
+}
+.steel{
+    background-color: #b8b8d0;
+}
+.fairy{
+    background-color: #ee99ac;
+}
+.pagination{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+}
+.pagination button {
+    color: #fff;
+    background-color: #6c79db;
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    font-size: .825rem;
+    border: none;
+    border-radius: 1rem;
+}
