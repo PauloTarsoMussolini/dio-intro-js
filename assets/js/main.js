@@ -1,7 +1,7 @@
 const loadMoreButton = document.getElementById("loadMoreButton")
-const limit = 5
+const limit = 10
 let offset = 0
-const maxRecords = 15
+const maxRecords = 151
 
 function createTypeList (pokemonTypes){
     return pokemonTypes.map(typeSlot =>  `<li class="type">${typeSlot.type.name}</li>`)
